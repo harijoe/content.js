@@ -1,3 +1,5 @@
-export const sum = (a, b) => {
-  return new Promise(resolve => resolve(a + b));
+export default (html) => {
+  const length = html.length;
+
+  return { length };
 };

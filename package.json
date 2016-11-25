@@ -15,24 +15,29 @@
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "testonly": "mocha $npm_package_options_mocha",
-    "test": "npm run lint && npm run testonly",
-    "test-watch": "npm run testonly -- --watch --watch-extensions js"
+    "test": "npm run lint --silent || true && npm run testonly --silent",
+    "test-watch": "npm run testonly -- --watch --watch-extensions js --silent"
   },
   "devDependencies": {
-    "nodemon": "1.7.x",
-    "mocha": "2.x.x",
-    "chai": "3.x.x",
-    "eslint": "1.7.x",
-    "babel-eslint": "4.x.x",
-    "eslint-plugin-babel": "2.x.x",
     "babel-cli": "6.x.x",
     "babel-core": "6.x.x",
+    "babel-eslint": "4.x.x",
+    "babel-plugin-transform-runtime": "6.x.x",
     "babel-polyfill": "6.x.x",
     "babel-preset-es2015": "6.x.x",
     "babel-preset-stage-2": "6.x.x",
-    "babel-plugin-transform-runtime": "6.x.x"
+    "babel-runtime": "6.x.x",
+    "chai": "3.x.x",
+    "eslint": "3.x.x",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "x.x.x",
+    "eslint-plugin-babel": "2.x.x",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "mocha": "2.x.x",
+    "nodemon": "1.7.x"
   },
   "dependencies": {
-    "babel-runtime": "6.x.x"
+    "bluebird": "^3.4.6",
+    "estraverse-fb": "^1.3.1"
   }
 }
