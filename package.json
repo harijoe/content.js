@@ -1,7 +1,7 @@
 {
-  "name": "npm-base",
+  "name": "content.js",
   "version": "1.0.0",
-  "description": "A base NPM package for writing a NPM package in ES2015",
+  "description": "A HTML parser which retrieves most useful information from an html string",
   "repository": {
     "type": "git",
     "url": "https://github.com/kadirahq/npm-base.git"
@@ -39,7 +39,6 @@
   "dependencies": {
     "bluebird": "^3.4.6",
     "cheerio": "^0.22.0",
-    "estraverse-fb": "^1.3.1",
     "string-similarity": "^1.1.0"
   }
 }
