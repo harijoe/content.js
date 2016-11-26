@@ -1,5 +1,5 @@
 {
-  "name": "content.js",
+  "name": "parse-content.js",
   "version": "1.0.0",
   "description": "A HTML parser which retrieves most useful information from an html string",
   "repository": {
